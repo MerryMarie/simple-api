@@ -1,8 +1,11 @@
 <?php
+use Helpers\Validator as Validator;
 class V2_Model extends Model{
-
+    
     public static function run_index(){
-        Response::sendJSON(array("data"=>["app_name"=>"FireNote"],'status'=>200,'error'=>''));
+        Response::setStatus(200);
+        Response::setData(["app_name"=>"FireNote"]);
+        Response::send();
     }
     public static function  run_countries(){
         if(!empty(Request::$route->params[0])){
@@ -18,57 +21,94 @@ class V2_Model extends Model{
         
         if(Request::$user->isAuthorised()){
             $usr=Request::$user->getUserInfo();
-            Response::sendJSON([array("username"=>$usr["login"],"auth"=>"true",'status'=>200,'error'=>'')]);
+            Response::setStatus(200);
+            Response::setData(["username"=>$usr["login"],"auth"=>"true"]);
+      
         }else{
-            Response::sendJSON([array("auth"=>"false",'status'=>403,'error'=>'')]);
+            Response::setStatus(400);
+            Response::setData(["auth"=>"false"]);
         }
+
+        Response::send();
     }
     protected static  function get_countries_list(){
         $arr=DataStorageController::getList();
-        header("Content-Type: application/json; charset=UTF-8");
-        header("Access-Control-Allow-Origin: http://localhost:8080");
-        header("Access-Control-Allow-Headers: *");
-        Response::sendJSON($arr);
+        Response::setStatus(200);
+        Response::setData($arr);
+        Response::send();
     }
     public static function  run_register($data){
-        $usr=DB::existUser($data[0]);
-        if(!$usr){
-            $id=DB::addUser($data[0],md5($data[1]));
-            if($id){
-            $atok=md5(time().uniqid());
-            DB::setSess($id,$atok);
-            Response::sendJSONAuth(array("data"=>["Answer"=>"Successful register"],'status'=>200,'error'=>''),$atok);
+
+        if(Validator::isValidLogin($data[0])){
+            $usr=DB::existUser($data[0]);
+
+            if(!$usr){
+                $id=DB::addUser(htmlspecialchars(strip_tags($data[0])),md5(htmlspecialchars(strip_tags($data[0]))));
+
+                if($id){
+                    $atok=md5(time().uniqid());
+                    DB::setSess($id,$atok);
+                    Response::setCookie("auth_token",$atok);
+                    Response::setStatus(200);
+                    Response::setData(["username"=>$usr['login']]);
+                }
+                else{
+                    Response::setStatus(400);
+                    Response::setError('Unexpected error!');
+                
+                }
+        
+            }else{
+                Response::setStatus(400);
+                Response::setError('User already exists!');
+            }
+    
+        }else{
+            Response::setStatus(400);
+            Response::setError('Invalid Login!');
         }
-        else{
-            Response::sendJSON(array("data"=>array("Answer"=>"Register failed","d"=>$data[0]),'status'=>400,'error'=>''));
-        }
- 
+
+         Response::send();
     }
-    }
+
     public static function  run_logout(){
         $cookie=Request::cookie('auth_token');
         if( $cookie){
             DB::unsetSess($cookie);
             
         }    
-        Response::sendJSONAuth(array('status'=>200,'error'=>''),"");
+        Response::setCookie("auth_token","");
+        Response::setStatus(200);
+        Response::send();
     }
+
     public static function  run_login($data){
+        
         if($data[0]&& $data[1]){
-            
-            //db request, for example
-            $usr=DB::checkCreds($data[0],md5($data[1]));
-            if($usr){//$data[0]=='Mary1234' && $data[1]=='0987'
-           // $u=Request::$user->getUserInfo();
+         
+            $usr=DB::checkCreds(htmlspecialchars(strip_tags($data[0])),md5(htmlspecialchars(strip_tags($data[1]))));
+            if($usr){
+         
             $atok=md5(time().uniqid());
             DB::setSess($usr['id'],$atok);
-            Response::sendJSONAuth(array("username"=>$usr['login'],'status'=>200,'error'=>''),$atok);
+            Response::setCookie("auth_token",$atok);
+            Response::setStatus(200);
+            Response::setData(["username"=>$usr['login']]);
+
+           
             }
             else{
-                Response::sendJSON(array("username"=>"",'status'=>400,'error'=>''));
+                Response::setStatus(400);
+                Response::setData(["username"=>""]);
+                Response::setError('Wrong login or password!');
+              
             }
         }else{
-            Response::sendJSON(array("username"=>"",'status'=>403,'error'=>''));
+            Response::setStatus(403);
+            Response::setData(["username"=>""]);
+            Response::setError('Unexpected mistake!');
         }
+
+        Response::send();
     }
 }

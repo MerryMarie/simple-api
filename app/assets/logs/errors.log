@@ -1591,3 +1591,1602 @@ Stack trace:
 )
 
 [2023-08-14 13:47:30]  
+[2023-08-16 10:33:35]  Error Object
+(
+    [message:protected] => Access to undeclared static property Response::$aHeaders
+    [string:Error:private] => 
+    [code:protected] => 0
+    [file:protected] => C:\Users\Пользователь\Desktop\cur\api\app\core\response.php
+    [line:protected] => 14
+    [trace:Error:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\response.php
+                    [line] => 23
+                    [function] => setHeaders
+                    [class] => Response
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\model.php
+                    [line] => 24
+                    [function] => sendJSON
+                    [class] => Response
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [auth] => false
+                                            [status] => 403
+                                            [error] => 
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\root\model.php
+                    [line] => 7
+                    [function] => get_user_check
+                    [class] => V2_Model
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => 
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\model.php
+                    [line] => 15
+                    [function] => run
+                    [class] => Model
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => get_user_check
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\controller.php
+                    [line] => 8
+                    [function] => run_user
+                    [class] => V2_Model
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => 
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\controller.php
+                    [line] => 19
+                    [function] => run
+                    [class] => V2_Controller
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => run_user
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\app.php
+                    [line] => 26
+                    [function] => run_user
+                    [class] => V2_Controller
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\app.php
+                    [line] => 36
+                    [function] => runModule
+                    [class] => App
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => v2
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\init.php
+                    [line] => 55
+                    [function] => run
+                    [class] => App
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [9] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\index.php
+                    [line] => 5
+                    [args] => Array
+                        (
+                            [0] => C:\Users\Пользователь\Desktop\cur\api\app\init.php
+                        )
+
+                    [function] => require_once
+                )
+
+        )
+
+    [previous:Error:private] => 
+)
+
+[2023-08-16 10:33:35]  Error Object
+(
+    [message:protected] => Access to undeclared static property Response::$aHeaders
+    [string:Error:private] => 
+    [code:protected] => 0
+    [file:protected] => C:\Users\Пользователь\Desktop\cur\api\app\core\response.php
+    [line:protected] => 14
+    [trace:Error:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\response.php
+                    [line] => 23
+                    [function] => setHeaders
+                    [class] => Response
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\model.php
+                    [line] => 32
+                    [function] => sendJSON
+                    [class] => Response
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Afghanistan
+                                    [1] => Albania
+                                    [2] => Algeria
+                                    [3] => Andorra
+                                    [4] => Angola
+                                    [5] => Anguilla
+                                    [6] => Antigua & Barbuda
+                                    [7] => Argentina
+                                    [8] => Armenia
+                                    [9] => Aruba
+                                    [10] => Australia
+                                    [11] => Austria
+                                    [12] => Azerbaijan
+                                    [13] => Bahamas
+                                    [14] => Bahrain
+                                    [15] => Bangladesh
+                                    [16] => Barbados
+                                    [17] => Belarus
+                                    [18] => Belgium
+                                    [19] => Belize
+                                    [20] => Benin
+                                    [21] => Bermuda
+                                    [22] => Bhutan
+                                    [23] => Bolivia
+                                    [24] => Bosnia & Herzegovina
+                                    [25] => Botswana
+                                    [26] => Brazil
+                                    [27] => British Virgin Islands
+                                    [28] => Brunei
+                                    [29] => Bulgaria
+                                    [30] => Burkina Faso
+                                    [31] => Burundi
+                                    [32] => Cambodia
+                                    [33] => Cameroon
+                                    [34] => Canada
+                                    [35] => Cape Verde
+                                    [36] => Cayman Islands
+                                    [37] => Central Arfrican Republic
+                                    [38] => Chad
+                                    [39] => Chile
+                                    [40] => China
+                                    [41] => Colombia
+                                    [42] => Congo
+                                    [43] => Cook Islands
+                                    [44] => Costa Rica
+                                    [45] => Cote D Ivoire
+                                    [46] => Croatia
+                                    [47] => Cuba
+                                    [48] => Curacao
+                                    [49] => Cyprus
+                                    [50] => Czech Republic
+                                    [51] => Denmark
+                                    [52] => Djibouti
+                                    [53] => Dominica
+                                    [54] => Dominican Republic
+                                    [55] => Ecuador
+                                    [56] => Egypt
+                                    [57] => El Salvador
+                                    [58] => Equatorial Guinea
+                                    [59] => Eritrea
+                                    [60] => Estonia
+                                    [61] => Ethiopia
+                                    [62] => Falkland Islands
+                                    [63] => Faroe Islands
+                                    [64] => Fiji
+                                    [65] => Finland
+                                    [66] => France
+                                    [67] => French Polynesia
+                                    [68] => French West Indies
+                                    [69] => Gabon
+                                    [70] => Gambia
+                                    [71] => Georgia
+                                    [72] => Germany
+                                    [73] => Ghana
+                                    [74] => Gibraltar
+                                    [75] => Greece
+                                    [76] => Greenland
+                                    [77] => Grenada
+                                    [78] => Guam
+                                    [79] => Guatemala
+                                    [80] => Guernsey
+                                    [81] => Guinea
+                                    [82] => Guinea Bissau
+                                    [83] => Guyana
+                                    [84] => Haiti
+                                    [85] => Honduras
+                                    [86] => Hong Kong
+                                    [87] => Hungary
+                                    [88] => Iceland
+                                    [89] => India
+                                    [90] => Indonesia
+                                    [91] => Iran
+                                    [92] => Iraq
+                                    [93] => Ireland
+                                    [94] => Isle of Man
+                                    [95] => Israel
+                                    [96] => Italy
+                                    [97] => Jamaica
+                                    [98] => Japan
+                                    [99] => Jersey
+                                    [100] => Jordan
+                                    [101] => Kazakhstan
+                                    [102] => Kenya
+                                    [103] => Kiribati
+                                    [104] => Kosovo
+                                    [105] => Kuwait
+                                    [106] => Kyrgyzstan
+                                    [107] => Laos
+                                    [108] => Latvia
+                                    [109] => Lebanon
+                                    [110] => Lesotho
+                                    [111] => Liberia
+                                    [112] => Libya
+                                    [113] => Liechtenstein
+                                    [114] => Lithuania
+                                    [115] => Luxembourg
+                                    [116] => Macau
+                                    [117] => Macedonia
+                                    [118] => Madagascar
+                                    [119] => Malawi
+                                    [120] => Malaysia
+                                    [121] => Maldives
+                                    [122] => Mali
+                                    [123] => Malta
+                                    [124] => Marshall Islands
+                                    [125] => Mauritania
+                                    [126] => Mauritius
+                                    [127] => Mexico
+                                    [128] => Micronesia
+                                    [129] => Moldova
+                                    [130] => Monaco
+                                    [131] => Mongolia
+                                    [132] => Montenegro
+                                    [133] => Montserrat
+                                    [134] => Morocco
+                                    [135] => Mozambique
+                                    [136] => Myanmar
+                                    [137] => Namibia
+                                    [138] => Nauro
+                                    [139] => Nepal
+                                    [140] => Netherlands
+                                    [141] => Netherlands Antilles
+                                    [142] => New Caledonia
+                                    [143] => New Zealand
+                                    [144] => Nicaragua
+                                    [145] => Niger
+                                    [146] => Nigeria
+                                    [147] => North Korea
+                                    [148] => Norway
+                                    [149] => Oman
+                                    [150] => Pakistan
+                                    [151] => Palau
+                                    [152] => Palestine
+                                    [153] => Panama
+                                    [154] => Papua New Guinea
+                                    [155] => Paraguay
+                                    [156] => Peru
+                                    [157] => Philippines
+                                    [158] => Poland
+                                    [159] => Portugal
+                                    [160] => Puerto Rico
+                                    [161] => Qatar
+                                    [162] => Reunion
+                                    [163] => Romania
+                                    [164] => Russia
+                                    [165] => Rwanda
+                                    [166] => Saint Pierre & Miquelon
+                                    [167] => Samoa
+                                    [168] => San Marino
+                                    [169] => Sao Tome and Principe
+                                    [170] => Saudi Arabia
+                                    [171] => Senegal
+                                    [172] => Serbia
+                                    [173] => Seychelles
+                                    [174] => Sierra Leone
+                                    [175] => Singapore
+                                    [176] => Slovakia
+                                    [177] => Slovenia
+                                    [178] => Solomon Islands
+                                    [179] => Somalia
+                                    [180] => South Africa
+                                    [181] => South Korea
+                                    [182] => South Sudan
+                                    [183] => Spain
+                                    [184] => Sri Lanka
+                                    [185] => St Kitts & Nevis
+                                    [186] => St Lucia
+                                    [187] => St Vincent
+                                    [188] => Sudan
+                                    [189] => Suriname
+                                    [190] => Swaziland
+                                    [191] => Sweden
+                                    [192] => Switzerland
+                                    [193] => Syria
+                                    [194] => Taiwan
+                                    [195] => Tajikistan
+                                    [196] => Tanzania
+                                    [197] => Thailand
+                                    [198] => Timor L'Este
+                                    [199] => Togo
+                                    [200] => Tonga
+                                    [201] => Trinidad & Tobago
+                                    [202] => Tunisia
+                                    [203] => Turkey
+                                    [204] => Turkmenistan
+                                    [205] => Turks & Caicos
+                                    [206] => Tuvalu
+                                    [207] => Uganda
+                                    [208] => Ukraine
+                                    [209] => United Arab Emirates
+                                    [210] => United Kingdom
+                                    [211] => United States of America
+                                    [212] => Uruguay
+                                    [213] => Uzbekistan
+                                    [214] => Vanuatu
+                                    [215] => Vatican City
+                                    [216] => Venezuela
+                                    [217] => Vietnam
+                                    [218] => Virgin Islands (US)
+                                    [219] => Yemen
+                                    [220] => Zambia
+                                    [221] => Zimbabwe
+                                )
+
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\root\model.php
+                    [line] => 7
+                    [function] => get_countries_list
+                    [class] => V2_Model
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => 
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\model.php
+                    [line] => 10
+                    [function] => run
+                    [class] => Model
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => get_countries_list
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\controller.php
+                    [line] => 8
+                    [function] => run_countries
+                    [class] => V2_Model
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => 
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\controller.php
+                    [line] => 16
+                    [function] => run
+                    [class] => V2_Controller
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => run_countries
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\app.php
+                    [line] => 26
+                    [function] => run_countries
+                    [class] => V2_Controller
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\app.php
+                    [line] => 36
+                    [function] => runModule
+                    [class] => App
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => v2
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\init.php
+                    [line] => 55
+                    [function] => run
+                    [class] => App
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [9] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\index.php
+                    [line] => 5
+                    [args] => Array
+                        (
+                            [0] => C:\Users\Пользователь\Desktop\cur\api\app\init.php
+                        )
+
+                    [function] => require_once
+                )
+
+        )
+
+    [previous:Error:private] => 
+)
+
+[2023-08-16 10:37:22]  Error Object
+(
+    [message:protected] => Access to undeclared static property Response::$aHeaders
+    [string:Error:private] => 
+    [code:protected] => 0
+    [file:protected] => C:\Users\Пользователь\Desktop\cur\api\app\core\response.php
+    [line:protected] => 14
+    [trace:Error:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\response.php
+                    [line] => 23
+                    [function] => setHeaders
+                    [class] => Response
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\model.php
+                    [line] => 24
+                    [function] => sendJSON
+                    [class] => Response
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [auth] => false
+                                            [status] => 403
+                                            [error] => 
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\root\model.php
+                    [line] => 7
+                    [function] => get_user_check
+                    [class] => V2_Model
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => 
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\model.php
+                    [line] => 15
+                    [function] => run
+                    [class] => Model
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => get_user_check
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\controller.php
+                    [line] => 8
+                    [function] => run_user
+                    [class] => V2_Model
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => 
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\controller.php
+                    [line] => 19
+                    [function] => run
+                    [class] => V2_Controller
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => run_user
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\app.php
+                    [line] => 26
+                    [function] => run_user
+                    [class] => V2_Controller
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\app.php
+                    [line] => 36
+                    [function] => runModule
+                    [class] => App
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => v2
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\init.php
+                    [line] => 55
+                    [function] => run
+                    [class] => App
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [9] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\index.php
+                    [line] => 5
+                    [args] => Array
+                        (
+                            [0] => C:\Users\Пользователь\Desktop\cur\api\app\init.php
+                        )
+
+                    [function] => require_once
+                )
+
+        )
+
+    [previous:Error:private] => 
+)
+
+[2023-08-16 10:37:22]  Error Object
+(
+    [message:protected] => Access to undeclared static property Response::$aHeaders
+    [string:Error:private] => 
+    [code:protected] => 0
+    [file:protected] => C:\Users\Пользователь\Desktop\cur\api\app\core\response.php
+    [line:protected] => 14
+    [trace:Error:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\response.php
+                    [line] => 23
+                    [function] => setHeaders
+                    [class] => Response
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\model.php
+                    [line] => 32
+                    [function] => sendJSON
+                    [class] => Response
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Afghanistan
+                                    [1] => Albania
+                                    [2] => Algeria
+                                    [3] => Andorra
+                                    [4] => Angola
+                                    [5] => Anguilla
+                                    [6] => Antigua & Barbuda
+                                    [7] => Argentina
+                                    [8] => Armenia
+                                    [9] => Aruba
+                                    [10] => Australia
+                                    [11] => Austria
+                                    [12] => Azerbaijan
+                                    [13] => Bahamas
+                                    [14] => Bahrain
+                                    [15] => Bangladesh
+                                    [16] => Barbados
+                                    [17] => Belarus
+                                    [18] => Belgium
+                                    [19] => Belize
+                                    [20] => Benin
+                                    [21] => Bermuda
+                                    [22] => Bhutan
+                                    [23] => Bolivia
+                                    [24] => Bosnia & Herzegovina
+                                    [25] => Botswana
+                                    [26] => Brazil
+                                    [27] => British Virgin Islands
+                                    [28] => Brunei
+                                    [29] => Bulgaria
+                                    [30] => Burkina Faso
+                                    [31] => Burundi
+                                    [32] => Cambodia
+                                    [33] => Cameroon
+                                    [34] => Canada
+                                    [35] => Cape Verde
+                                    [36] => Cayman Islands
+                                    [37] => Central Arfrican Republic
+                                    [38] => Chad
+                                    [39] => Chile
+                                    [40] => China
+                                    [41] => Colombia
+                                    [42] => Congo
+                                    [43] => Cook Islands
+                                    [44] => Costa Rica
+                                    [45] => Cote D Ivoire
+                                    [46] => Croatia
+                                    [47] => Cuba
+                                    [48] => Curacao
+                                    [49] => Cyprus
+                                    [50] => Czech Republic
+                                    [51] => Denmark
+                                    [52] => Djibouti
+                                    [53] => Dominica
+                                    [54] => Dominican Republic
+                                    [55] => Ecuador
+                                    [56] => Egypt
+                                    [57] => El Salvador
+                                    [58] => Equatorial Guinea
+                                    [59] => Eritrea
+                                    [60] => Estonia
+                                    [61] => Ethiopia
+                                    [62] => Falkland Islands
+                                    [63] => Faroe Islands
+                                    [64] => Fiji
+                                    [65] => Finland
+                                    [66] => France
+                                    [67] => French Polynesia
+                                    [68] => French West Indies
+                                    [69] => Gabon
+                                    [70] => Gambia
+                                    [71] => Georgia
+                                    [72] => Germany
+                                    [73] => Ghana
+                                    [74] => Gibraltar
+                                    [75] => Greece
+                                    [76] => Greenland
+                                    [77] => Grenada
+                                    [78] => Guam
+                                    [79] => Guatemala
+                                    [80] => Guernsey
+                                    [81] => Guinea
+                                    [82] => Guinea Bissau
+                                    [83] => Guyana
+                                    [84] => Haiti
+                                    [85] => Honduras
+                                    [86] => Hong Kong
+                                    [87] => Hungary
+                                    [88] => Iceland
+                                    [89] => India
+                                    [90] => Indonesia
+                                    [91] => Iran
+                                    [92] => Iraq
+                                    [93] => Ireland
+                                    [94] => Isle of Man
+                                    [95] => Israel
+                                    [96] => Italy
+                                    [97] => Jamaica
+                                    [98] => Japan
+                                    [99] => Jersey
+                                    [100] => Jordan
+                                    [101] => Kazakhstan
+                                    [102] => Kenya
+                                    [103] => Kiribati
+                                    [104] => Kosovo
+                                    [105] => Kuwait
+                                    [106] => Kyrgyzstan
+                                    [107] => Laos
+                                    [108] => Latvia
+                                    [109] => Lebanon
+                                    [110] => Lesotho
+                                    [111] => Liberia
+                                    [112] => Libya
+                                    [113] => Liechtenstein
+                                    [114] => Lithuania
+                                    [115] => Luxembourg
+                                    [116] => Macau
+                                    [117] => Macedonia
+                                    [118] => Madagascar
+                                    [119] => Malawi
+                                    [120] => Malaysia
+                                    [121] => Maldives
+                                    [122] => Mali
+                                    [123] => Malta
+                                    [124] => Marshall Islands
+                                    [125] => Mauritania
+                                    [126] => Mauritius
+                                    [127] => Mexico
+                                    [128] => Micronesia
+                                    [129] => Moldova
+                                    [130] => Monaco
+                                    [131] => Mongolia
+                                    [132] => Montenegro
+                                    [133] => Montserrat
+                                    [134] => Morocco
+                                    [135] => Mozambique
+                                    [136] => Myanmar
+                                    [137] => Namibia
+                                    [138] => Nauro
+                                    [139] => Nepal
+                                    [140] => Netherlands
+                                    [141] => Netherlands Antilles
+                                    [142] => New Caledonia
+                                    [143] => New Zealand
+                                    [144] => Nicaragua
+                                    [145] => Niger
+                                    [146] => Nigeria
+                                    [147] => North Korea
+                                    [148] => Norway
+                                    [149] => Oman
+                                    [150] => Pakistan
+                                    [151] => Palau
+                                    [152] => Palestine
+                                    [153] => Panama
+                                    [154] => Papua New Guinea
+                                    [155] => Paraguay
+                                    [156] => Peru
+                                    [157] => Philippines
+                                    [158] => Poland
+                                    [159] => Portugal
+                                    [160] => Puerto Rico
+                                    [161] => Qatar
+                                    [162] => Reunion
+                                    [163] => Romania
+                                    [164] => Russia
+                                    [165] => Rwanda
+                                    [166] => Saint Pierre & Miquelon
+                                    [167] => Samoa
+                                    [168] => San Marino
+                                    [169] => Sao Tome and Principe
+                                    [170] => Saudi Arabia
+                                    [171] => Senegal
+                                    [172] => Serbia
+                                    [173] => Seychelles
+                                    [174] => Sierra Leone
+                                    [175] => Singapore
+                                    [176] => Slovakia
+                                    [177] => Slovenia
+                                    [178] => Solomon Islands
+                                    [179] => Somalia
+                                    [180] => South Africa
+                                    [181] => South Korea
+                                    [182] => South Sudan
+                                    [183] => Spain
+                                    [184] => Sri Lanka
+                                    [185] => St Kitts & Nevis
+                                    [186] => St Lucia
+                                    [187] => St Vincent
+                                    [188] => Sudan
+                                    [189] => Suriname
+                                    [190] => Swaziland
+                                    [191] => Sweden
+                                    [192] => Switzerland
+                                    [193] => Syria
+                                    [194] => Taiwan
+                                    [195] => Tajikistan
+                                    [196] => Tanzania
+                                    [197] => Thailand
+                                    [198] => Timor L'Este
+                                    [199] => Togo
+                                    [200] => Tonga
+                                    [201] => Trinidad & Tobago
+                                    [202] => Tunisia
+                                    [203] => Turkey
+                                    [204] => Turkmenistan
+                                    [205] => Turks & Caicos
+                                    [206] => Tuvalu
+                                    [207] => Uganda
+                                    [208] => Ukraine
+                                    [209] => United Arab Emirates
+                                    [210] => United Kingdom
+                                    [211] => United States of America
+                                    [212] => Uruguay
+                                    [213] => Uzbekistan
+                                    [214] => Vanuatu
+                                    [215] => Vatican City
+                                    [216] => Venezuela
+                                    [217] => Vietnam
+                                    [218] => Virgin Islands (US)
+                                    [219] => Yemen
+                                    [220] => Zambia
+                                    [221] => Zimbabwe
+                                )
+
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\root\model.php
+                    [line] => 7
+                    [function] => get_countries_list
+                    [class] => V2_Model
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => 
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\model.php
+                    [line] => 10
+                    [function] => run
+                    [class] => Model
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => get_countries_list
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\controller.php
+                    [line] => 8
+                    [function] => run_countries
+                    [class] => V2_Model
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => 
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\controller.php
+                    [line] => 16
+                    [function] => run
+                    [class] => V2_Controller
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => run_countries
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\app.php
+                    [line] => 26
+                    [function] => run_countries
+                    [class] => V2_Controller
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\app.php
+                    [line] => 36
+                    [function] => runModule
+                    [class] => App
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => v2
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\init.php
+                    [line] => 55
+                    [function] => run
+                    [class] => App
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [9] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\index.php
+                    [line] => 5
+                    [args] => Array
+                        (
+                            [0] => C:\Users\Пользователь\Desktop\cur\api\app\init.php
+                        )
+
+                    [function] => require_once
+                )
+
+        )
+
+    [previous:Error:private] => 
+)
+
+[2023-08-16 10:38:56]  Error Object
+(
+    [message:protected] => Access to undeclared static property Response::$aHeaders
+    [string:Error:private] => 
+    [code:protected] => 0
+    [file:protected] => C:\Users\Пользователь\Desktop\cur\api\app\core\response.php
+    [line:protected] => 14
+    [trace:Error:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\response.php
+                    [line] => 24
+                    [function] => setHeaders
+                    [class] => Response
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\model.php
+                    [line] => 24
+                    [function] => sendJSON
+                    [class] => Response
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [auth] => false
+                                            [status] => 403
+                                            [error] => 
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\root\model.php
+                    [line] => 7
+                    [function] => get_user_check
+                    [class] => V2_Model
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => 
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\model.php
+                    [line] => 15
+                    [function] => run
+                    [class] => Model
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => get_user_check
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\controller.php
+                    [line] => 8
+                    [function] => run_user
+                    [class] => V2_Model
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => 
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\controller.php
+                    [line] => 19
+                    [function] => run
+                    [class] => V2_Controller
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => run_user
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\app.php
+                    [line] => 26
+                    [function] => run_user
+                    [class] => V2_Controller
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\app.php
+                    [line] => 36
+                    [function] => runModule
+                    [class] => App
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => v2
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\init.php
+                    [line] => 55
+                    [function] => run
+                    [class] => App
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [9] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\index.php
+                    [line] => 5
+                    [args] => Array
+                        (
+                            [0] => C:\Users\Пользователь\Desktop\cur\api\app\init.php
+                        )
+
+                    [function] => require_once
+                )
+
+        )
+
+    [previous:Error:private] => 
+)
+
+[2023-08-16 10:38:56]  Error Object
+(
+    [message:protected] => Access to undeclared static property Response::$aHeaders
+    [string:Error:private] => 
+    [code:protected] => 0
+    [file:protected] => C:\Users\Пользователь\Desktop\cur\api\app\core\response.php
+    [line:protected] => 14
+    [trace:Error:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\response.php
+                    [line] => 24
+                    [function] => setHeaders
+                    [class] => Response
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\model.php
+                    [line] => 32
+                    [function] => sendJSON
+                    [class] => Response
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Afghanistan
+                                    [1] => Albania
+                                    [2] => Algeria
+                                    [3] => Andorra
+                                    [4] => Angola
+                                    [5] => Anguilla
+                                    [6] => Antigua & Barbuda
+                                    [7] => Argentina
+                                    [8] => Armenia
+                                    [9] => Aruba
+                                    [10] => Australia
+                                    [11] => Austria
+                                    [12] => Azerbaijan
+                                    [13] => Bahamas
+                                    [14] => Bahrain
+                                    [15] => Bangladesh
+                                    [16] => Barbados
+                                    [17] => Belarus
+                                    [18] => Belgium
+                                    [19] => Belize
+                                    [20] => Benin
+                                    [21] => Bermuda
+                                    [22] => Bhutan
+                                    [23] => Bolivia
+                                    [24] => Bosnia & Herzegovina
+                                    [25] => Botswana
+                                    [26] => Brazil
+                                    [27] => British Virgin Islands
+                                    [28] => Brunei
+                                    [29] => Bulgaria
+                                    [30] => Burkina Faso
+                                    [31] => Burundi
+                                    [32] => Cambodia
+                                    [33] => Cameroon
+                                    [34] => Canada
+                                    [35] => Cape Verde
+                                    [36] => Cayman Islands
+                                    [37] => Central Arfrican Republic
+                                    [38] => Chad
+                                    [39] => Chile
+                                    [40] => China
+                                    [41] => Colombia
+                                    [42] => Congo
+                                    [43] => Cook Islands
+                                    [44] => Costa Rica
+                                    [45] => Cote D Ivoire
+                                    [46] => Croatia
+                                    [47] => Cuba
+                                    [48] => Curacao
+                                    [49] => Cyprus
+                                    [50] => Czech Republic
+                                    [51] => Denmark
+                                    [52] => Djibouti
+                                    [53] => Dominica
+                                    [54] => Dominican Republic
+                                    [55] => Ecuador
+                                    [56] => Egypt
+                                    [57] => El Salvador
+                                    [58] => Equatorial Guinea
+                                    [59] => Eritrea
+                                    [60] => Estonia
+                                    [61] => Ethiopia
+                                    [62] => Falkland Islands
+                                    [63] => Faroe Islands
+                                    [64] => Fiji
+                                    [65] => Finland
+                                    [66] => France
+                                    [67] => French Polynesia
+                                    [68] => French West Indies
+                                    [69] => Gabon
+                                    [70] => Gambia
+                                    [71] => Georgia
+                                    [72] => Germany
+                                    [73] => Ghana
+                                    [74] => Gibraltar
+                                    [75] => Greece
+                                    [76] => Greenland
+                                    [77] => Grenada
+                                    [78] => Guam
+                                    [79] => Guatemala
+                                    [80] => Guernsey
+                                    [81] => Guinea
+                                    [82] => Guinea Bissau
+                                    [83] => Guyana
+                                    [84] => Haiti
+                                    [85] => Honduras
+                                    [86] => Hong Kong
+                                    [87] => Hungary
+                                    [88] => Iceland
+                                    [89] => India
+                                    [90] => Indonesia
+                                    [91] => Iran
+                                    [92] => Iraq
+                                    [93] => Ireland
+                                    [94] => Isle of Man
+                                    [95] => Israel
+                                    [96] => Italy
+                                    [97] => Jamaica
+                                    [98] => Japan
+                                    [99] => Jersey
+                                    [100] => Jordan
+                                    [101] => Kazakhstan
+                                    [102] => Kenya
+                                    [103] => Kiribati
+                                    [104] => Kosovo
+                                    [105] => Kuwait
+                                    [106] => Kyrgyzstan
+                                    [107] => Laos
+                                    [108] => Latvia
+                                    [109] => Lebanon
+                                    [110] => Lesotho
+                                    [111] => Liberia
+                                    [112] => Libya
+                                    [113] => Liechtenstein
+                                    [114] => Lithuania
+                                    [115] => Luxembourg
+                                    [116] => Macau
+                                    [117] => Macedonia
+                                    [118] => Madagascar
+                                    [119] => Malawi
+                                    [120] => Malaysia
+                                    [121] => Maldives
+                                    [122] => Mali
+                                    [123] => Malta
+                                    [124] => Marshall Islands
+                                    [125] => Mauritania
+                                    [126] => Mauritius
+                                    [127] => Mexico
+                                    [128] => Micronesia
+                                    [129] => Moldova
+                                    [130] => Monaco
+                                    [131] => Mongolia
+                                    [132] => Montenegro
+                                    [133] => Montserrat
+                                    [134] => Morocco
+                                    [135] => Mozambique
+                                    [136] => Myanmar
+                                    [137] => Namibia
+                                    [138] => Nauro
+                                    [139] => Nepal
+                                    [140] => Netherlands
+                                    [141] => Netherlands Antilles
+                                    [142] => New Caledonia
+                                    [143] => New Zealand
+                                    [144] => Nicaragua
+                                    [145] => Niger
+                                    [146] => Nigeria
+                                    [147] => North Korea
+                                    [148] => Norway
+                                    [149] => Oman
+                                    [150] => Pakistan
+                                    [151] => Palau
+                                    [152] => Palestine
+                                    [153] => Panama
+                                    [154] => Papua New Guinea
+                                    [155] => Paraguay
+                                    [156] => Peru
+                                    [157] => Philippines
+                                    [158] => Poland
+                                    [159] => Portugal
+                                    [160] => Puerto Rico
+                                    [161] => Qatar
+                                    [162] => Reunion
+                                    [163] => Romania
+                                    [164] => Russia
+                                    [165] => Rwanda
+                                    [166] => Saint Pierre & Miquelon
+                                    [167] => Samoa
+                                    [168] => San Marino
+                                    [169] => Sao Tome and Principe
+                                    [170] => Saudi Arabia
+                                    [171] => Senegal
+                                    [172] => Serbia
+                                    [173] => Seychelles
+                                    [174] => Sierra Leone
+                                    [175] => Singapore
+                                    [176] => Slovakia
+                                    [177] => Slovenia
+                                    [178] => Solomon Islands
+                                    [179] => Somalia
+                                    [180] => South Africa
+                                    [181] => South Korea
+                                    [182] => South Sudan
+                                    [183] => Spain
+                                    [184] => Sri Lanka
+                                    [185] => St Kitts & Nevis
+                                    [186] => St Lucia
+                                    [187] => St Vincent
+                                    [188] => Sudan
+                                    [189] => Suriname
+                                    [190] => Swaziland
+                                    [191] => Sweden
+                                    [192] => Switzerland
+                                    [193] => Syria
+                                    [194] => Taiwan
+                                    [195] => Tajikistan
+                                    [196] => Tanzania
+                                    [197] => Thailand
+                                    [198] => Timor L'Este
+                                    [199] => Togo
+                                    [200] => Tonga
+                                    [201] => Trinidad & Tobago
+                                    [202] => Tunisia
+                                    [203] => Turkey
+                                    [204] => Turkmenistan
+                                    [205] => Turks & Caicos
+                                    [206] => Tuvalu
+                                    [207] => Uganda
+                                    [208] => Ukraine
+                                    [209] => United Arab Emirates
+                                    [210] => United Kingdom
+                                    [211] => United States of America
+                                    [212] => Uruguay
+                                    [213] => Uzbekistan
+                                    [214] => Vanuatu
+                                    [215] => Vatican City
+                                    [216] => Venezuela
+                                    [217] => Vietnam
+                                    [218] => Virgin Islands (US)
+                                    [219] => Yemen
+                                    [220] => Zambia
+                                    [221] => Zimbabwe
+                                )
+
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\root\model.php
+                    [line] => 7
+                    [function] => get_countries_list
+                    [class] => V2_Model
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => 
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\model.php
+                    [line] => 10
+                    [function] => run
+                    [class] => Model
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => get_countries_list
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\controller.php
+                    [line] => 8
+                    [function] => run_countries
+                    [class] => V2_Model
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => 
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\api\v2\controller.php
+                    [line] => 16
+                    [function] => run
+                    [class] => V2_Controller
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => run_countries
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\app.php
+                    [line] => 26
+                    [function] => run_countries
+                    [class] => V2_Controller
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\core\app.php
+                    [line] => 36
+                    [function] => runModule
+                    [class] => App
+                    [type] => ::
+                    [args] => Array
+                        (
+                            [0] => v2
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\app\init.php
+                    [line] => 55
+                    [function] => run
+                    [class] => App
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [9] => Array
+                (
+                    [file] => C:\Users\Пользователь\Desktop\cur\api\index.php
+                    [line] => 5
+                    [args] => Array
+                        (
+                            [0] => C:\Users\Пользователь\Desktop\cur\api\app\init.php
+                        )
+
+                    [function] => require_once
+                )
+
+        )
+
+    [previous:Error:private] => 
+)
+
