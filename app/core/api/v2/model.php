@@ -43,14 +43,15 @@ class V2_Model extends Model{
             $usr=DB::existUser($data[0]);
 
             if(!$usr){
-                $id=DB::addUser(htmlspecialchars(strip_tags($data[0])),md5(htmlspecialchars(strip_tags($data[0]))));
+                $id=DB::addUser(htmlspecialchars(strip_tags($data[0])),md5(htmlspecialchars(strip_tags($data[1]))));
 
                 if($id){
+
                     $atok=md5(time().uniqid());
                     DB::setSess($id,$atok);
                     Response::setCookie("auth_token",$atok);
                     Response::setStatus(200);
-                    Response::setData(["username"=>$usr['login']]);
+                    Response::setData(["username"=>$data[0]]);
                 }
                 else{
                     Response::setStatus(400);
@@ -85,8 +86,11 @@ class V2_Model extends Model{
     public static function  run_login($data){
         
         if($data[0]&& $data[1]){
-         
+            Logger::log($data[0]);
+            Logger::log($data[1]);
+            Logger::log(md5(htmlspecialchars(strip_tags($data[1]))));
             $usr=DB::checkCreds(htmlspecialchars(strip_tags($data[0])),md5(htmlspecialchars(strip_tags($data[1]))));
+            Logger::log($usr);
             if($usr){
          
             $atok=md5(time().uniqid());

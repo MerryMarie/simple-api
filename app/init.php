@@ -23,7 +23,7 @@ set_error_handler(function ($level, $message, $file = '', $line = 0)
 });
 function err_handlr($e)
 {
-    Log::log($e);
+    Logger::log($e);
     http_response_code(500);
     if (ini_get('display_errors')) {
         echo '<pre>'.$e.'</pre>';
@@ -49,7 +49,7 @@ register_shutdown_function(function ()
 
 Autoloader::init();
 Mod::setDirRoot(__DIR__);
-Log::setLogFile(Mod::getDirRoot()."/assets/logs/errors.log");
+Logger::setLogFile(Mod::getDirRoot()."/assets/logs/errors.log");
 DB::init();
 Request::init();
 App::run();

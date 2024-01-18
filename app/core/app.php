@@ -19,7 +19,7 @@ class App{
     }
     private static function runModule($sModuleName='v1'){
         $cntr=ucfirst($sModuleName).'_Controller';
-        //Log::log(explode("_",$cntr));
+        //Logger::log(explode("_",$cntr));
         if(self::loadModule($cntr)){
         $act='run_'.Request::$route->action;
             if(method_exists($cntr,$act)) {

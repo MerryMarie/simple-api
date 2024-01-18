@@ -1,5 +1,5 @@
 <?php
-class Log
+class Logger
 {
     private static $sFile="";
     public static function log($str){

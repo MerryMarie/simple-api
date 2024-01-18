@@ -10,7 +10,7 @@ class DataStorageController{
             }
         }*/
         $sSearchLine=mb_strtoupper(urldecode($sSearchLine),"utf-8");
-       // Log::log( $sSearchLine);
+       // Logger::log( $sSearchLine);
         $row = 1;
         if (($handle = fopen(Mod::getDirRoot()."/styles/docs/dict2.csv", "r")) !== FALSE) {
             while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
